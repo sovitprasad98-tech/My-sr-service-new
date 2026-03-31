@@ -1,19 +1,17 @@
 {
   "name": "sovit-premium-qr-api",
   "version": "2.0.0",
-  "description": "Advanced QR Code Generator API with Premium Features",
+  "description": "Advanced QR Code Generator API",
   "main": "api/qr.js",
   "scripts": {
     "dev": "vercel dev",
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "qrcode": "^1.5.3",
-    "canvas": "^2.11.2",
-    "svg2img": "^1.0.0-beta.2",
-    "pdfkit": "^0.13.0"
+    "qrcode": "^1.5.3"
   },
   "engines": {
-    "node": ">=18.x"
+    "node": "18.x"
   }
 }
+
