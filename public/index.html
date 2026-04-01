@@ -472,7 +472,7 @@ body::before {
                 </div>
             </div>
             
-            <!-- Customization Options -->
+                <!-- Customization Options -->
             <div class="premium-card">
                 <div class="section-title">
                     <i class="fas fa-palette"></i>
@@ -483,94 +483,33 @@ body::before {
                 <div class="mb-4">
                     <h6 style="color: var(--secondary); margin-bottom: 15px;">🎨 Colors</h6>
                     
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" id="gradientToggle">
-                        <label class="form-check-label" for="gradientToggle">Use Gradient Colors</label>
-                    </div>
-                    
-                    <div id="solidColors">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">QR Color</label>
-                                <div class="color-picker-wrapper">
-                                    <input type="color" id="fgColor" value="#000000">
-                                    <input type="text" class="form-control" id="fgColorText" value="#000000">
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Background Color</label>
-                                <div class="color-picker-wrapper">
-                                    <input type="color" id="bgColor" value="#ffffff">
-                                    <input type="text" class="form-control" id="bgColorText" value="#ffffff">
-                                </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">QR Color</label>
+                            <div class="color-picker-wrapper">
+                                <input type="color" id="fgColor" value="#000000">
+                                <input type="text" class="form-control" id="fgColorText" value="#000000">
                             </div>
                         </div>
-                    </div>
-                    
-                    <div id="gradientColors" style="display: none;">
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <label class="form-label">Color 1</label>
-                                <input type="color" class="form-control" id="gradientColor1" value="#00ff88">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Background Color</label>
+                            <div class="color-picker-wrapper">
+                                <input type="color" id="bgColor" value="#ffffff">
+                                <input type="text" class="form-control" id="bgColorText" value="#ffffff">
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <label class="form-label">Color 2</label>
-                                <input type="color" class="form-control" id="gradientColor2" value="#00d4ff">
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label class="form-label">Direction</label>
-                                <select class="form-select" id="gradientDirection">
-                                    <option value="diagonal">Diagonal</option>
-                                    <option value="horizontal">Horizontal</option>
-                                    <option value="vertical">Vertical</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="transparentBg">
-                        <label class="form-check-label" for="transparentBg">Transparent Background</label>
-                    </div>
-                </div>
-                
-                <!-- Frame Settings -->
-                <div class="mb-4">
-                    <h6 style="color: var(--secondary); margin-bottom: 15px;">🖼️ Frame & Text</h6>
-                    
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" id="frameToggle">
-                        <label class="form-check-label" for="frameToggle">Add Frame</label>
-                    </div>
-                    
-                    <div id="frameSettings" style="display: none;">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Frame Color</label>
-                                <input type="color" class="form-control" id="frameColor" value="#000000">
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Text Color</label>
-                                <input type="color" class="form-control" id="frameTextColor" value="#ffffff">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Frame Text (CTA)</label>
-                            <input type="text" class="form-control" id="frameText" placeholder="Scan Me">
                         </div>
                     </div>
                 </div>
                 
                 <!-- Export Settings -->
                 <div class="mb-3">
-                    <h6 style="color: var(--secondary); margin-bottom: 15px;">💾 Export Format</h6>
+                    <h6 style="color: var(--secondary); margin-bottom: 15px;">💾 Export Settings</h6>
                     
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Format</label>
                             <select class="form-select" id="exportFormat">
                                 <option value="png">PNG (Recommended)</option>
-                                <option value="jpeg">JPEG</option>
                                 <option value="svg">SVG (Vector)</option>
                             </select>
                         </div>
@@ -580,8 +519,8 @@ body::before {
                                 <option value="300">300 x 300</option>
                                 <option value="400" selected>400 x 400</option>
                                 <option value="500">500 x 500</option>
-                                <option value="800">800 x 800 (HD)</option>
-                                <option value="1000">1000 x 1000 (Full HD)</option>
+                                <option value="600">600 x 600</option>
+                                <option value="800">800 x 800</option>
                             </select>
                         </div>
                     </div>
@@ -625,11 +564,11 @@ body::before {
                 </div>
                 
                 <ul style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; padding-left: 20px;">
-                    <li>Use gradients for eye-catching QR codes</li>
-                    <li>Add your logo for branding (coming soon)</li>
-                    <li>Frame text like "Scan Me" increases scans by 40%</li>
-                    <li>Choose PNG for best quality</li>
+                    <li>Use custom colors for brand matching</li>
+                    <li>PNG format for best quality</li>
+                    <li>SVG format for scalable prints</li>
                     <li>Test QR codes before printing</li>
+                    <li>Higher sizes (600px+) for large displays</li>
                 </ul>
             </div>
             
@@ -643,17 +582,6 @@ body::before {
 <script>
 // Change this to your Vercel deployment URL
 const API_BASE = "https://your-project.vercel.app/api/qr";
-
-// Toggle gradient colors
-document.getElementById('gradientToggle').addEventListener('change', function() {
-    document.getElementById('solidColors').style.display = this.checked ? 'none' : 'block';
-    document.getElementById('gradientColors').style.display = this.checked ? 'block' : 'none';
-});
-
-// Toggle frame settings
-document.getElementById('frameToggle').addEventListener('change', function() {
-    document.getElementById('frameSettings').style.display = this.checked ? 'block' : 'none';
-});
 
 // Sync color pickers
 function syncColorPicker(colorInput, textInput) {
@@ -733,30 +661,10 @@ async function generateQR() {
     }
     
     // Add customization params
-    const useGradient = document.getElementById('gradientToggle').checked;
-    const transparent = document.getElementById('transparentBg').checked;
-    const useFrame = document.getElementById('frameToggle').checked;
-    
-    if (useGradient) {
-        params.append('gradient', 'true');
-        params.append('gradientColor1', document.getElementById('gradientColor1').value);
-        params.append('gradientColor2', document.getElementById('gradientColor2').value);
-        params.append('gradientDirection', document.getElementById('gradientDirection').value);
-    } else {
-        params.append('fgColor', document.getElementById('fgColor').value);
-        params.append('bgColor', document.getElementById('bgColor').value);
-    }
-    
-    params.append('transparent', transparent);
+    params.append('fgColor', document.getElementById('fgColor').value);
+    params.append('bgColor', document.getElementById('bgColor').value);
     params.append('size', document.getElementById('qrSize').value);
     params.append('format', document.getElementById('exportFormat').value);
-    
-    if (useFrame) {
-        params.append('frame', 'true');
-        params.append('frameColor', document.getElementById('frameColor').value);
-        params.append('frameTextColor', document.getElementById('frameTextColor').value);
-        params.append('frameText', document.getElementById('frameText').value || 'Scan Me');
-    }
     
     // Show loading
     loadingOverlay.classList.add('active');
